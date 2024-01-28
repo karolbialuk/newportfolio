@@ -1,0 +1,131 @@
+.rightelementproject__elements-container {
+  width: 100%;
+}
+
+.rightelementproject__element {
+  display: flex;
+}
+
+.rightelementproject__element-img-container {
+  position: relative;
+  width: 55%;
+  height: 100%;
+  img {
+    width: 100%;
+    border-radius: 5px;
+    filter: brightness(90%);
+    z-index: -1;
+    position: relative;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+  }
+}
+
+.rightelementproject__img-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #0aada5;
+  border-radius: 5px;
+  filter: opacity(18%);
+}
+
+.rightelementproject__element-text-container {
+  width: 45%;
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  align-items: flex-end;
+
+  h2 {
+    font-family: "Source Code Pro", sans-serif;
+    color: #0aada5;
+    font-size: clamp(5px, 18px, 30px);
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: clamp(15px, 22px, 60px);
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    margin: 15px 0;
+    padding: 0;
+    color: #e9e9e9;
+  }
+}
+
+.rightelementproject__element-text-header {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.rightelementproject__element-text-p-container {
+  background-color: rgba(14, 14, 14, 0.897);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 35vw;
+  border-radius: 5px;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+  box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 1);
+
+  p {
+    display: inline-block;
+    color: #fff;
+    font-size: clamp(12px, 0.7vw, 40px);
+    font-family: "Open Sans", sans-serif;
+    line-height: 27px;
+  }
+}
+
+.rightelementproject__element-technologies-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.rightelementproject__element-links {
+  font-size: clamp(10px, 26px, 40px);
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+@media (max-width: 850px) {
+  .rightelementproject__element-text-p-container {
+    text-align: center;
+    min-width: 100px;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .rightelementproject__element-img-container {
+    display: none;
+  }
+
+  .rightelementproject__element {
+    width: 100%;
+  }
+
+  .rightelementproject__element-text-container {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .rightelementproject__element-text-header {
+    text-align: center;
+  }
+
+  .rightelementproject__element-technologies-container {
+    justify-content: center;
+  }
+}

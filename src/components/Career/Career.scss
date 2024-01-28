@@ -1,0 +1,161 @@
+.career {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  color: #afafaf;
+  padding: 15vh 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    p {
+      font-size: clamp(5px, 17px, 35px);
+      font-family: "Open Sans", sans-serif;
+      line-height: 30px;
+    }
+
+    span {
+      font-family: "Source Code Pro", sans-serif;
+      color: #0aada5;
+    }
+
+    h1 {
+      font-size: clamp(20px, 3vw, 30px);
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      color: #e9e9e9;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  &__header-h1 {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  &__header-h1-line {
+    position: relative;
+    flex: 1;
+    bottom: 45px;
+    height: 100px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(95, 95, 95, 0.425);
+    }
+  }
+
+  &__elements-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__left-sidebar-container {
+    max-width: 320px;
+    min-width: 50px;
+    width: 100%;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      padding: 15px 25px;
+      font-size: clamp(16px, 1vw, 35px);
+      overflow: hidden;
+      white-space: nowrap;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.089);
+        border-radius: 2px;
+        color: #0aada5;
+        transition: 0.1s ease-out;
+      }
+    }
+  }
+
+  &__content-container {
+    max-width: 500px;
+    min-width: 300px;
+    width: 100%;
+    animation: in 0.4s ease-in-out;
+    text-align: justify;
+
+    @keyframes in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      font-size: clamp(8px, 22px, 30px);
+      color: #e9e9e9;
+    }
+
+    h2 {
+      font-size: clamp(4px, 16px, 25px);
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+
+    li {
+      margin: 20px 0;
+      font-family: "Open Sans", sans-serif;
+      line-height: 25px;
+      font-size: clamp(14px, 0.9vw, 30px);
+    }
+
+    ul li::before {
+      content: "\2022";
+      color: #0aada5;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+      margin-right: 0.5em;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .career {
+    &__elements-container {
+      flex-direction: column;
+    }
+
+    &__header {
+      width: 100%;
+    }
+
+    &__header-h1 {
+    }
+
+    &__header-h1-line {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.navbar {
+  position: sticky;
+  width: 100%;
+  z-index: 1000;
+
+  &__container {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 50px 0 50px;
+    height: 9vh;
+  }
+
+  &__logo {
+    min-width: 40px;
+    max-width: 65px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      filter: brightness(95%);
+      opacity: 0.9;
+    }
+  }
+
+  &__menu-icon {
+  }
+
+  &__menu {
+    min-width: 200px;
+    font-size: 2rem;
+    color: #fff;
+    display: none;
+    position: relative;
+  }
+
+  &__menu-container {
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    span {
+      color: #12dad0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #dadadae7;
+      transition: 0.1s ease-out;
+      font-size: clamp(5px, 17px, 35px);
+      line-height: 35px;
+
+      ul {
+      }
+    }
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      transition: 0.1s ease-out;
+
+      &:hover {
+        color: #fff;
+        transition: 0.1s ease-in;
+      }
+    }
+
+    span {
+      color: #12dad0;
+    }
+    // background: red;
+  }
+
+  &__button {
+    padding: 10px 25px;
+    border: none;
+    background: transparent;
+    border: 1px solid #12dad0;
+    color: #12dad0;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.1s ease-out;
+
+    &:hover {
+      background: #12dad0;
+      color: #131313;
+      transition: 0.1s ease-in;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .navbar {
+    position: fixed;
+    &__items {
+      display: none;
+    }
+
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      cursor: pointer;
+    }
+  }
+}
+
+.scroll-up {
+  background-color: rgba(0, 4, 8, 0.295);
+  -webkit-box-shadow: 5px 3px 24px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 5px 3px 24px 0px rgba(0, 0, 0, 1);
+  box-shadow: 5px 3px 24px 0px rgba(0, 0, 0, 1);
+}
+
+.scroll-down {
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
