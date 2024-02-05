@@ -14,14 +14,16 @@ const Projects = () => {
       img: "project1.png",
       text: "Strona internetowa, którą stworzyłem, skupia się na umożliwieniu użytkownikom przeglądania dostępnych aukcji samochodów, sprawdzania cen, a także uzyskiwania kontaktowych informacji od sprzedających. Cały interfejs graficzny został zaprojektowany na podstawie jednego z prototypów na Figmie.",
       technologies: ["React", "Node.js"],
-      href: "https://github.com/karolbialuk/carauctionweb",
+      githubHref: "https://github.com/karolbialuk/carauctionweb",
+      projectHref: "http://bialuk.pl:5001/login",
     },
     {
       name: "Chat App",
       img: "project2.png",
       text: "Aplikacja została zaprojektowana z myślą o zapewnieniu prostego i interaktywnego środowiska do komunikacji z innymi użytkownikami. Wykorzystanie Reacta, node i socket.io pozwoliło na stworzenie responsywnego interfejsu użytkownika, gwarantując płynne doświadczenia podczas korzystania z aplikacji. Cały interfejs graficzny został zaprojektowany na podstawie jednego z prototypów na Figmie.",
       technologies: ["React", "Node.js", "Socket.io", "TypeScript"],
-      href: "https://github.com/karolbialuk/chatapp",
+      githubHref: "https://github.com/karolbialuk/chatapp",
+      projectHref: "http://bialuk.pl:5002/login",
     },
 
     {
@@ -29,7 +31,8 @@ const Projects = () => {
       img: "project3.png",
       text: "Strona intenetowa, którą stworzyłem, ma imitować portal społecznościowy na którym mamy możliwość tworzenia kont użytkowników, dodawania znajomych, dodawania postów wraz ze zdjęciami. Projekt posiada także dodatkowe funkcje takie jak: Dodawanie komentarzy pod postami, lajkowanie postów oraz komentarzy. Aplikacja jest w trakcie tworzenia i chciałbym dodać do niej możliwość zapisywania postów, tworzenie stron organizacji czy obserwowanie użytkowników. Cały interfejs graficzny został zaprojektowany na podstawie jednego z prototypów na Figmie przy użyciu biblioteki MUI.",
       technologies: ["React", "Node.js", "TypeScript"],
-      href: "https://github.com/karolbialuk/socialapp",
+      githubHref: "https://github.com/karolbialuk/socialapp",
+      projectHref: "",
     },
   ];
 

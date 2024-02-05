@@ -4,6 +4,7 @@
 
 .rightelementproject__element {
   display: flex;
+
 }
 
 .rightelementproject__element-img-container {
@@ -92,7 +93,10 @@
 }
 
 .rightelementproject__element-links {
-  font-size: clamp(10px, 26px, 40px);
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+
   a {
     text-decoration: none;
     color: inherit;

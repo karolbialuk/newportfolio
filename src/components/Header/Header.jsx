@@ -40,10 +40,12 @@ const Header = () => {
 
         <AnimatedElement delay={1400}>
           <div className="header__btn-arrow-container">
+	  <a href="mailto: karol.bialuk@gmail.com">
             <button className="header__contact-btn">Kontakt</button>
             <div className="header__arrow">
               <PiArrowBendUpLeft />
             </div>
+	  </a>
           </div>
         </AnimatedElement>
       </div>

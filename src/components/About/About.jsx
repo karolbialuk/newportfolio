@@ -69,8 +69,8 @@ const About = () => {
 
           <AnimatedElement delay={200}>
             <div className="about__img-container">
-              <div className="about__img-filter" />
-              <img src="moje.jpg" alt="myphoto" />
+	     <div className="about__img-filter" />
+              <img src="zdjecie.png" alt="myphoto" />
             </div>
           </AnimatedElement>
         </div>

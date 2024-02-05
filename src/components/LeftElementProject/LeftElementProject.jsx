@@ -1,9 +1,10 @@
 import React from "react";
 import { RiGithubLine } from "react-icons/ri";
+import { FiExternalLink } from "react-icons/fi";
 import "./LeftElementProject.scss";
 
 const LeftElementProject = ({ item }) => {
-  const { img, name, text, technologies, href } = item;
+  const { img, name, text, technologies, githubHref, projectHref } = item;
   return (
     <div className="leftelementproject__elements-container">
       <div className="leftelementproject__element">
@@ -21,14 +22,16 @@ const LeftElementProject = ({ item }) => {
             })}
           </div>
           <div className="leftelementproject__element-links">
-            <a href={href}>
-              <RiGithubLine />
+	    <a href={projectHref}>
+             <FiExternalLink />
             </a>
+	    <a href={githubHref}>
+	     <RiGithubLine />
+	    </a>
           </div>
         </div>
         <div className="leftelementproject__element-img-container">
-          <div className="leftelementproject__img-filter" />
-          <img src={item.img} alt="project1" />
+          <img src={img} alt="project1" />
         </div>
       </div>
     </div>
